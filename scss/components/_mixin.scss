@@ -1,0 +1,24 @@
+@mixin text_ident {
+    display: block;
+    text-indent: -9999px;
+}
+
+%hide_text {
+    @include text_ident;
+}
+
+@mixin flex_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin mh_heading-mobile {
+    font-family: 'Alata';
+    font-weight: 400;
+    font-size: calc((var(--font-size) * 2.75));
+    line-height: calc((var(--line-height) * 2));
+    text-transform: uppercase;
+    color: var(--font-color);
+}
