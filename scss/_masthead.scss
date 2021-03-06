@@ -12,3 +12,14 @@
         }
     }
 }
+
+@media (min-width: 1000px) {
+    .masthead {
+        & .masthead_container {
+            & .masthead_heading {
+                @include mh_heading-desktop;
+                width: 500px;
+            }
+        }
+    }
+}

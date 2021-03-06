@@ -23,6 +23,15 @@
     color: var(--font-color);
 }
 
+@mixin mh_heading-desktop {
+    font-family: 'Alata';
+    font-weight: 400;
+    font-size: calc((var(--font-size) * 3.75));
+    line-height: calc((var(--line-height) * 3.5));
+    text-transform: uppercase;
+    color: var(--font-color);
+}
+
 @mixin article_heading {
     // font-family: 'Josefin Sans';
     font-family: 'Alata';
@@ -58,4 +67,21 @@
     line-height: calc((var(--line-height)));
     color: var(--heading-color);
     text-transform: uppercase;
+}
+
+@mixin copyright_font {
+    font-family: 'Josefin Sans';
+    font-weight: 300;
+    font-size: calc((var(--font-size)));
+    line-height: calc((var(--line-height)));
+    color: var(--paragraph-color);
+}
+
+@mixin menu_font {
+    font-family: 'Josefin Sans';
+    font-weight: 300;
+    font-size: calc((var(--font-size)) + 3px);
+    line-height: calc((var(--line-height)) + 4px);
+    color: var(--font-color);
+    opacity: 0.8;
 }
