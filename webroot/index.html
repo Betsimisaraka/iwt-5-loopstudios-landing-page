@@ -50,21 +50,27 @@
             </header>
             <article class="interactive">
                 <div class="container interactive_container">
-                    <h3 class="interactive_heading">The leader in interactive VR</h3>
-                    <p class="interactive_paragraph">
-                        Founded in 2011, Loopstudios has been producing
-                        world-class virtual reality
-                        projects for some of the best companies around the
-                        globe. Our award-winning
-                        creations have transformed businesses through digital
-                        experiences that bind
-                        to their brand.
-                    </p>
+                    <picture class="interactive_image">
+                        <source media="(min-width: 1000px)" srcset="./images/desktop/image-interactive.jpg">
+                        <img class="image_changes" src="./images/mobile/image-interactive.jpg" alt="Rock carvings image">
+                    </picture>
+                    <div class="interactive_content">
+                        <h3 class="article_heading interactive_heading">The leader in interactive VR</h3>
+                        <p class="interactive_paragraph">
+                            Founded in 2011, Loopstudios has been producing
+                            world-class virtual reality
+                            projects for some of the best companies around the
+                            globe. Our award-winning
+                            creations have transformed businesses through digital
+                            experiences that bind
+                            to their brand.
+                        </p>
+                    </div>
                 </div>
             </article>
             <article class="creations">
                 <div class="container creations_container">
-                    <h3 class="creations_heading">Our creations</h3>
+                    <h3 class="article_heading creations_heading">Our creations</h3>
                     <ul class="creations_lists">
                         <li class="creations_lists__items">
                             <h4 class="creations_lists__items--title">Deep earth</h4>
@@ -97,7 +103,7 @@
                                 fisheye</h4>
                         </li>
                     </ul>
-                    <button><a href="/see-all">See all</a></button>
+                    <button class="creations_button"><a href="/see-all">See all</a></button>
                 </div>
             </article>
         </main>

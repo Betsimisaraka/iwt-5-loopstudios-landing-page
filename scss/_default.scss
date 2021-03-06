@@ -5,12 +5,28 @@ html {
     // background-color: aquamarine;
 }
 
-body, h1, h2 {
+body, h1, h2, h3, h4, p, ul, li {
     margin: 0;
     padding: 0;
+}
+
+ul {
+    list-style: none;
 }
 
 .container {
     margin-left: var(--base-margin);
     margin-right: var(--base-margin);
+}
+
+.article_heading {
+    @include article_heading;
+}
+
+@media (min-width: 1000px) {
+    .container {
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
